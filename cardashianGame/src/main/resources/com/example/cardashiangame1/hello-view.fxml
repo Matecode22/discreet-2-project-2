@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="908.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cardashiangame1.ApplicationController">
+   <children>
+      <ImageView fitHeight="535.0" fitWidth="908.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-17.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="78.0" AnchorPane.topAnchor="0.0">
+            <Image url="@img/backgroundStartImage.jpg" /></ImageView>
+      <FlowPane alignment="CENTER" prefHeight="484.0" prefWidth="908.0" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <GridPane prefHeight="217.0" prefWidth="579.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#playButtonOnAction" prefHeight="51.0" prefWidth="154.0" style="-fx-text-fill: white; -fx-border-radius: 0; -fx-padding: 10 40; -fx-background-color: purple;" text="PLAY" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <FlowPane alignment="CENTER" opacity="0.63" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: PURPLE; -fx-border-radius: 10px;">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="8.0" prefWidth="550.0" text="Kanye West escapando de las Kardashian" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </FlowPane>
+               </children>
+            </GridPane>
+         </children>
+      </FlowPane>
+   </children>
+</AnchorPane>
